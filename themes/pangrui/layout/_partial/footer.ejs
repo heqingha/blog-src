@@ -1,0 +1,20 @@
+<footer class="footer">
+    <div class="footer-inner">
+        <p>
+            <a href="/blog/links" title="友情链接">友情链接</a>
+            &nbsp;&nbsp;<em>·</em>&nbsp;&nbsp;<a href="/books" title="<%= __('books') %>">我的书单</a>            
+            <!-- 自定义链接 
+            &nbsp;&nbsp;<em>·</em>&nbsp;&nbsp;<a href="/help" title="<%= __('help') %>" >急救中心</a>-->
+            
+        </p>
+        <p>
+            本站已建立<a href="/timeline" time="时光真疯狂" id="siteBuildingTime"></a>天（为者常成，行者常至）<br/>
+            ©2018 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，作者<a href="http://www.ruizhengyun.cn">胖芮</a>
+            ，Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+        </p>
+        <%- partial('_widget/site-analytics') %>
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<%- js(['js/InsightSearch','js/SimpleCore', 'js/gitment.browser.js']) %>

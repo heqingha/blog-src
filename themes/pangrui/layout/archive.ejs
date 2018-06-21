@@ -1,0 +1,36 @@
+<div class="page-title">
+    <ul>
+        <li><a href="/blog" data-name="<%= __('home') %>" title="Back Home"><%= __('home') %></a></li>
+        <li><a href="/blog/tags" data-name="<%= __('tagcloud')  %>" title="<%= __('tagcloud')  %>"><%= __('tags')  %></a></li>
+        <%- partial('_widget/search-bar', null, {cache: !config.relative_link}) %>
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <h3 class="post-title">本站目前共计<%= site.posts.length %>篇文章</h3>
+        </div>
+        <p><img src="/blog/images/category-bg.jpg" alt="category-bg"></p>
+        <div class="post-content markdown-body" itemprop="articleBody">
+            <div class="archives">
+                <% var lastDate; %>
+                <% site.posts.sort('date', theme.homePageSortType).each(function(post, i){ %>
+                <% var currentDate = parseInt(date(post.date, 'YYYYMM')); %>
+                <% if (lastDate != currentDate){ %>
+                <% lastDate = currentDate; %>
+                <div class="archives-item">
+                    <h2><%= date(post.date, 'YYYY') %>年<%= date(post.date, 'MM') %>月</h2>
+                    <ul class="archives_list">
+                        <% } %>
+                        <li><%= date(post.date, 'DD') %>日 周<%= time(post.date, 'dd') %>
+                            <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+                        </li>
+                        <% if (!site.posts.sort('date', theme.homePageSortType).eq(i + 1) || currentDate != parseInt(date(site.posts.sort('date', theme.homePageSortType).eq(i + 1).date, 'YYYYMM'))){ %>
+                    </ul>
+                </div>
+                <% } %>
+                <% }) %>
+            </div>
+        </div>
+    </article>
+</div>

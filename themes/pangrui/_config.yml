@@ -1,0 +1,157 @@
+# site name
+siteName: 胖芮
+shortName: 芮
+
+
+# full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
+fullHttps: false
+
+# favicon
+favicon: /blog/images/favicon.ico
+# unique avatar
+avatarShow: false
+avatarImage: /blog/images/favicon.png
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+
+# your site build time or domain buy time
+siteBuildingTime: 07/05/2011
+
+# Top navigate menu name
+## Notice:
+## Name order decide show index.The name also called category alias,so you must set category alias before start server.
+## BTW,'category_map' and 'tag_map' field in site '_config.yml' file must one to one correspondence with menus below.
+menu:
+  前端: big-front-end
+  学习: study
+  生活: life
+
+# Left menu of single pages settings
+## Notice: faName is FontAwesome style name
+# http://www.fontawesome.com.cn/faicons/
+leftPagesMenu:
+- uri: about
+  title: 作者
+  faName: fa-user-o 
+# - uri: help
+#   title: 帮助
+#   faName: fa-question-circle
+
+
+# cover info config
+coverTitle: 聊聊生活 码码代码
+coverDescription: 致力于全栈，只为那颗最珍贵年轻的心
+
+# sns url
+sns:
+  # telegram: http://t.me/kunyintang
+  # instagram: https://www.instagram.com/mtangsir/
+  # twitter: https://twitter.com/tangkunyin
+  # github: https://github.com/tangkunyin
+  github: https://github.com/ruizhengyun/
+  stack-overflow: https://stackoverflow.com/users/8601298
+  shield: https://www.zhihu.com/people/ruizhengyun
+  book: http://www.jianshu.com/u/d22e524e8ab5
+  asterisk: https://segmentfault.com/u/jianghuzaijian
+  envelope: mailto:840690384@qq.com
+
+# your article copyright or content declare
+postDeclare: 本文代表个人观点，内容也仅供参考
+
+# Git-pages server info
+pageServerName: Coding
+pageServerUrl: https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f723e2
+
+
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+# https://github.com/settings/applications/784202
+Comment:
+  Id: 821385ff32fa2162bdcf
+  Secret: 06816e29cd28cf3fd503daf7e24e2305f6ec327f
+  Repo: ruizhengyun.github.io
+  Owner: ruizhengyun
+
+## Comments settings.You can choose only ONE to display.
+# disqus shortName,
+disqus_shortname:
+
+# Analytics
+tentcentAnalyticsId:
+
+baidu_tongji: true
+
+books:
+- name: 编程小白的第一本 Python 入门书
+  img: /blog/img/books/python/1863.jpg
+  url: http://www.ituring.com.cn/book/1863
+  info: 既然笨办法不能让我学会 Python，那么我决定用一种聪明方法来学，为自己创造学习的捷径。这种高效学习法的核心...
+  author: 侯爵
+  isYi: false
+  authorUrl: http://www.ituring.com.cn/space/219776
+  status: done
+- name: 未来已来
+  img: /blog/img/books/horizon/weilaiyilai.jpg  
+  url: http://product.dangdang.com/25061944.html
+  info: 阿里授权解读阿里巴巴未来战略作品！全面展现阿里巴巴的商业逻辑和纵深布局！
+  author: 阿里巴巴集团
+  isYi: false
+  authorUrl: http://search.dangdang.com/?key2=%B0%A2%C0%EF%B0%CD%B0%CD%BC%AF%CD%C5&medium=01&category_path=01.00.00.00.00.00
+  status: done
+- name: 生命最后的读书会
+  img: /blog/img/books/horizon/dushuhui.jpg  
+  url: http://product.dangdang.com/23307493.html?_ddclickunion=419-955922%7C00E0a4965f76f6d5b335|ad_type=0|sys_id=1#dd_refer=https%3A%2F%2Fc.intdmp.com%2Fl%3Fl%3Dcl7q6ngcncycdm446wbqnwvyrwwopn4vntpspnm2p7ptyq4dumwoncunpo6wnsubpkzsyqtfrwwopt7eutlo1k7fwlw7pn4wfp793mpsr9pdub6_uq4emnsd4cdoczg7rnu_fmxsyogs3mddmjbdmogby9rd3oovfl2lwljm6nwlf9b7y5l-
+  info: 书是人类*有力的武器”，它对抗恶、死亡与恐惧。
+  author: (美)施瓦尔贝
+  isYi: false
+  authorUrl: http://search.dangdang.com/?key2=%CA%A9%CD%DF%B6%FB%B1%B4&medium=01&category_path=01.00.00.00.00.00
+  status: doing
+- name: 生命不息，折腾不止
+  img: /blog/img/books/horizon/shengmingbuxi.jpg
+  url: http://product.dangdang.com/23761088.html
+  info: 完整收录罗永浩从2009年到2014年12月的6场演讲
+  author: 罗永浩
+  isYi: false
+  authorUrl: 
+  status: doing
+- name: Python编程：从入门到实践
+  img: /blog/img/books/python/1861.jpg  
+  url: http://www.ituring.com.cn/book/1861
+  info: 本书是一本针对所有层次的Python读者而作的Python入门书。全书分两部分：第一部分介绍用Python编程...
+  author: 袁国忠
+  isYi: true
+  authorUrl: http://www.ituring.com.cn/space/3525
+  status: doing
+- name: 看见
+  img: /blog/img/books/horizon/kanjian.jpg
+  url: http://product.dangdang.com/22924035.html
+  info: 雾霾调查纪录片《穹顶之下》制作人 柴静：十年个人成长的告白，中国社会变迁的备忘
+  author: 柴静
+  isYi: false
+  authorUrl: 
+  status: "todo"
+- name: Python机器学习基础教程
+  img: /blog/img/books/python/1915.jpg  
+  url: http://www.ituring.com.cn/book/1915
+  info: 本书是机器学习入门书，以Python语言介绍。主要内容包括：机器学习的基本概念及其应用；实践中最常用的机器学习...
+  author: 张亮（hysic）
+  isYi: true
+  authorUrl: http://www.ituring.com.cn/space/192063
+  status: todo
+
+
+tutorials:
+- name: ECMAScript 6 入门
+  img: /blog/img/books/es/es6.jpg  
+  url: http://www.ruizhengyun.cn/es6/
+  info: 《ECMAScript 6 入门》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新引入的语法特性。
+  author: 阮一峰
+  isYi: false
+  authorUrl: http://www.ruanyifeng.com/home.html
+  status: doing
+
+
+

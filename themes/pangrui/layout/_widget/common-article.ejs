@@ -1,0 +1,40 @@
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="<%= post.authorLink %>" target="_blank">
+                    <img width="48" src="/blog/<%= post.avatar %>" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="<%= post.authorAbout %>" target="_blank"><%= post.author %></a>
+                    <span title="最后编辑于<%= date(post.date) %>"><%= date(post.date) %></span>
+                </p>
+                <p><%= post.authorDesc %></p>
+            </div>
+            <h2 class="post-title"><%- post.title %></h2>
+            <div class="post-meta">
+                本文总共<%- strip_html(post.content).length %>个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <%- post.content %>
+        </div>
+        <div class="post-tool">
+            <a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏
+            </a>
+        </div>
+        <% if (post.tags){ %>
+        <div class="post-tags"><%= __('tags') %>：
+            <% post.tags.each(function(tag){ %>
+            <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+            <% }) %>
+        </div>
+        <% } %>
+    </article>
+    <% if(post.layout && post.layout === 'post' && theme.postDeclare) { %>
+    <p><%= theme.postDeclare %></p>
+    <% } %>
+    <%- partial('_partial/comment', {post: post}) %>
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>

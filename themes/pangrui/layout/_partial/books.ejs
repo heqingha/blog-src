@@ -1,0 +1,58 @@
+<div id="cover">
+    <div class="cover-img"></div>
+    <div class="clearfix book-list">
+        <h2><a href="/books" target="_blank">历年书单</a>2018在读...</h2>
+        <% for (let index in theme.books ) { %>
+        <% let book = theme.books[index]%>
+        <div class="item">
+            <div class="book">
+                <a class="book-img book-<%= book.status %>" href="<%= book.url %>" target="_blank">
+                    <img src="<%= book.img %>" title="<%= book.info %>" alt="<%= book.name %>" />
+                </a>
+                <div class="info">
+                    <a href="<%= book.url %>" target="_blank" title="<%= book.name %>"><%= book.name %></a>
+                </div>
+                <div class="author">
+                    <a href="<%= book.authorUrl %>" target="_blank"><%= book.author %></a><% if (book.isYi) { %>&nbsp;&nbsp;<span class="s-gray">译</span><% } %>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    <div class="clearfix book-list">
+        <h2><a href="/tutorials" target="_blank">更多指南</a>在看tutorials...</h2>
+        <% for (let index in theme.tutorials ) { %>
+        <% let tutorial = theme.tutorials[index]%>
+        <div class="item">
+            <div class="book">
+                <a class="book-img book-<%= tutorial.status %>" href="<%= tutorial.url %>" target="_blank">
+                    <img src="<%= tutorial.img %>" title="<%= tutorial.info %>" alt="<%= tutorial.name %>" />
+                </a>
+                <div class="info">
+                    <a href="<%= tutorial.url %>" target="_blank" title="<%= tutorial.name %>"><%= tutorial.name %></a>
+                </div>
+                <div class="author">
+                    <a href="<%= tutorial.authorUrl %>" target="_blank"><%= tutorial.author %></a><% if (tutorial.isYi) { %>&nbsp;&nbsp;<span class="s-gray">译</span><% } %>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    <div class="cover-info">
+        <% if (theme.avatarShow) { %>
+        <img class="avatar" width="72" src="<%= theme.avatarImage %>" alt="avatar"/>
+        <% } %>
+        <h1 class="cover-siteName"><%= theme.siteName %></h1>
+        <h3 class="cover-siteTitle"><%= theme.coverTitle %></h3>
+        <p class="cover-siteDesc"><%= theme.coverDescription %></p>
+        <div class="cover-sns">
+            <% for (let snsKey in theme.sns){ %>
+            <div class="btn btn-<%= snsKey %>">
+                <a href="<%= theme.sns[snsKey] %>" target="_blank" title="<%= snsKey %>" ref="friend">
+                    <i class="fa fa-<%= snsKey %>"></i>
+                </a>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>
