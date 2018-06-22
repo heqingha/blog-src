@@ -1,13 +1,13 @@
 ---
-title: 毛遂自荐
+title: 我
 author: 胖芮
 avatar: /images/pangrui.png
 authorLink: http://www.ruizhengyun.cn
 authorAbout: http://www.ruizhengyun.cn
 authorDesc: 不论我码不码代码，我都是一枚快乐的前端
 date: 2017-02-07 13:23:07
-keywords: 关于说IT，说IT是什么
-description: 说IT是个什么鬼？来，这里给你答案。简言之，说IT是一个聚焦于技术和人文的原创IT博客。
+keywords: 胖芮的博客
+description: 致力于全栈技术，只为那颗最珍贵年轻的心
 photos:
 comments: false
 ---

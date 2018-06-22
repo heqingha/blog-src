@@ -14,7 +14,7 @@ avatarImage: /blog/images/favicon.png
 
 # Home page sort type: -1: newer first，1: older first.
 homePageSortType: -1
-# Home page article shown number)
+# Home page article shown number
 homeArticleShown: 10
 
 # your site build time or domain buy time
