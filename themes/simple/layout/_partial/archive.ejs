@@ -1,0 +1,34 @@
+<div class="page-title">
+    <ul>
+        <li class="<%= pagination == 2 ? 'active' : '' %>">
+            <a href="/blog" data-name="<%= __('recent_posts')  %>"><%= __('recent_posts')  %></a>
+        </li>
+        <% for (let menuKey in theme.menu){ %>
+        <li class="<%= (page.category == menuKey) ? 'active' : '' %>">
+            <a href="/blog/categories/<%= theme.menu[menuKey] %>" data-name="<%= menuKey %>"><%= menuKey %></a>
+        </li>
+        <% } %>
+        <%- partial('_widget/search-bar') %>
+    </ul>
+</div>
+<div class="main-inner">
+    <% if (theme.sticky_top.enable) { %>
+        <% page.posts.limit(theme.home_article_shown).each(function(post){ %>
+            <%- partial('_widget/category-items', {post: post}) %>
+        <% }) %>
+    <% } else { %>
+        <!-- default get newest -->
+        <% page.posts.sort('date', theme.home_page_sort).limit(theme.home_article_shown).each(function(post){ %>
+            <%- partial('_widget/category-items', {post: post}) %>
+        <% }) %>
+    <% } %>
+</div>
+<% if (page.total > 1){ %>
+<div id="btn-pager">
+    <% var prev_text = __('prev'); var next_text = __('next') %>
+    <%- paginator({
+        prev_text: prev_text,
+        next_text: next_text
+    }) %>
+</div>
+<% } %>

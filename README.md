@@ -5,3 +5,14 @@
 目前在杭州一家公司上班，团队有30+前端，现在小组内每天都有半小时分享。后续我也会坚持每周有更新吧，每天更新现在还很难做到，毕竟公司业务也挺紧急的。
 
 ...
+
+## 插件介绍
+1.[hexo-abbrlink 固定链接](https://github.com/rozbo/hexo-abbrlink)
+为hexo的每个帖子自动创建一个且唯一的链接
+
+2.[hexo-filter-sup](https://github.com/bubkoo/hexo-filter-sup)
+为Hexo生成上标( <sup> ) 标记
+
+
+2.[hexo-filter-sub](https://github.com/bubkoo/hexo-filter-sub)
+为Hexo生成上标( <sub> ) 标记

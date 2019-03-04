@@ -1,0 +1,28 @@
+<footer class="footer">
+    <div class="footer-inner" style="text-align: <%- is_post() ? 'center' : 'left' %>">
+        <p>
+            <a href="/blog/links" title="友情链接">友情链接</a>&nbsp;&nbsp;<em>·</em>&nbsp;&nbsp;
+            <a href="/books" title="<%= __('books') %>">我的书单</a>
+            <!-- 自定义链接 
+            <a href="/about"  title="<%= __('about') %>"><%= __('about') %></a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/help" title="<%= __('help') %>" ><%= __('help') %></a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/links" title="<%= __('links') %>"><%= __('links') %></a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/sitemap.xml" title="<%= __('map') %>"><%= __('map') %></a>
+            -->
+        </p>
+        <p>
+            本站已建立 <a href="/timeline" time="时光真疯狂" id="siteBuildingTime"></a> 天（为者常成，行者常至）<br/>
+            ©2018 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，作者<a href="http://www.ruizhengyun.cn">江湖再见</a>
+            ，Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+        </p>
+    </div>
+</footer>
+<%- js(['js/jquery.min.js', 'js/simple-core', 'js/mermaid.min']) %>
+
+<!-- mermaid -->
+<script>
+    if (window.mermaid) {
+        mermaid.initialize({theme: 'forest'});
+    }
+</script>

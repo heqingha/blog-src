@@ -1,12 +1,12 @@
 ---
 title: 微信小程序开发(二)
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: 'http://www.ruizhengyun.cn'
-authorAbout: 'http://www.ruizhengyun.cn'
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 前端
-photos: /img/2018/wx-sp-1.jpg
+authorLink: 'http://www.ruizhengyun.cn/blog/about/'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
+photos: /img/2018/wx-sp.jpg
 abbrlink: c08aaf2d
 date: 2018-04-02 10:43:05
 tags: 微信小程序
@@ -16,7 +16,7 @@ description: 小程序开发准备工作
 ## 流程
 * [注册小程序账号](https://mp.weixin.qq.com/ -> 小程序)
 * 激活邮箱(pangrui2017@163.com -> 激活)
-* 信息登录(胖芮)
+* 信息登录(江湖再见)
 * 登录小程序管理后台(多人合作)
 * 完善小程序信息
 * 绑定开发者

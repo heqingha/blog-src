@@ -1,12 +1,12 @@
 ---
 title: 安排
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: 'http://www.ruizhengyun.cn/about/'
-authorAbout: 'http://www.ruizhengyun.cn'
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 前端
-photos: /img/pangrui.jpg
+authorLink: 'http://www.ruizhengyun.cn/blog/about'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
+photos: /img/frontend.jpg
 abbrlink: be63186b
 date: 2017-12-12 11:35:24
 tags: 

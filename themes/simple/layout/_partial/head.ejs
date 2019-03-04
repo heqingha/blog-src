@@ -1,0 +1,62 @@
+<!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=<%= config.url %>/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on">
+<link rel="dns-prefetch" href="<%= config.url %>">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="prefetch" href="<%= config.url %>">
+<link rel="prefetch" href="//www.google-analytics.com">
+<% if (theme.comments.disqus_shortname) { %>
+    <link rel="dns-prefetch" href="//disqus.com">
+    <link rel="dns-prefetch" href="//<%= theme.comments.disqus_shortname %>.disqus.com">
+    <link rel="prefetch" href="//disqus.com">
+    <link rel="prefetch" href="//<%= theme.comments.disqus_shortname %>.disqus.com">
+<% } %>
+<link rel="prerender" href="<%= config.url %>">
+<% if (theme.csp_enable){ %>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<% } %>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=<%= config.url %>">
+<meta name="author" content="<%= config.author %>">
+<%- css(['/css/simple.css']) %>
+<% if (theme.favicon){ %>
+<%- favicon_tag(theme.favicon) %>
+<% } %>
+<%
+var siteTitle = page.title;
+if (is_archive()) {
+    siteTitle = __('archives');
+    if (is_month()) {
+        siteTitle += '- ' + page.year + '/' + page.month;
+    } else if (is_year()) {
+        siteTitle += '- ' + page.year;
+    }
+} else if (is_category()) {
+    siteTitle = __('categories') + ' - ' + page.category;
+} else if (is_tag()) {
+    siteTitle = __('tags') + ' - ' + page.tag;
+}
+%>
+<title><% if (siteTitle){ %><%= __(siteTitle.toLowerCase()) %> - <% } %><%= config.title %><% if (is_home()){ %> - <%= config.subtitle %><% } %></title>
+<%
+var keywords;
+if (page.keywords) {
+    keywords = page.keywords;
+} else {
+    keywords = config.keywords;
+}
+%>
+<meta name="keywords" content="<%= keywords %>">
+<%
+var description;
+if (page.description) {
+    description = page.description;
+} else {
+    description = config.description;
+}
+%>
+<meta name="description " content="<%= description %>">

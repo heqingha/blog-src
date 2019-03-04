@@ -1,11 +1,11 @@
 ---
 title: 选择一款或几款适合自己的编辑器IDE
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: http://www.ruizhengyun.cn
-authorAbout: http://www.ruizhengyun.cn
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 学习
+authorLink: 'http://www.ruizhengyun.cn/blog/about'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
 tags: 工具
 abbrlink: a7dd470a
 date: 2017-10-17 13:15:09

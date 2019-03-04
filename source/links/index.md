@@ -1,10 +1,10 @@
 ---
 title: 嘉宾推荐（嘉宾位次没有先后顺序）
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: http://www.ruizhengyun.cn
-authorAbout: http://www.ruizhengyun.cn
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
+authorLink: 'http://www.ruizhengyun.cn/blog/about/'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about/'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
 date: 2017-12-12 13:22:22
 keywords: 嘉宾推荐，友情链接
 description: 重量级嘉宾推荐，收录有趣、有意义、有影响力、有正能量的博客、资源。欢迎推荐、自荐

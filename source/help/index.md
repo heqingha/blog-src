@@ -1,10 +1,10 @@
 ---
 title: QA - 帮助那个中心...
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: http://www.ruizhengyun.cn
-authorAbout: http://www.ruizhengyun.cn
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
+authorLink: 'http://www.ruizhengyun.cn/blog/about/'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about/'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
 date: 2017-03-29 18:49:38
 keywords: help，qa，帮助中心，站内帮助
 description: 这里是说IT网站的站内帮助，帮助中心会尽量把一些常见问题通过自问自答的方式放出，希望真的能帮到你们。

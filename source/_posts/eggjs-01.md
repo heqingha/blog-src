@@ -1,12 +1,12 @@
 ---
 title: eggjs学习指南（一）
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: 'http://www.ruizhengyun.cn/about/'
-authorAbout: 'http://www.ruizhengyun.cn'
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 前端
-photos: /img/pangrui.jpg
+authorLink: 'http://www.ruizhengyun.cn/blog/about'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
+photos: /img/frontend.jpg
 abbrlink: 4bbadd8d
 date: 2018-05-05 08:54:11
 tags: eggjs

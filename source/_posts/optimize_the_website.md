@@ -1,11 +1,11 @@
 ---
 title: Web前端应该从哪些方面来优化网站
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
 authorLink: http://www.ruizhengyun.cn
 authorAbout: http://www.ruizhengyun.cn
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 前端
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
 tags: 性能
 abbrlink: c50a8aa7
 date: 2016-10-07 15:51:27

@@ -1,14 +1,14 @@
 ---
 title: 微信小程序开发(三)
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: 'http://www.ruizhengyun.cn'
-authorAbout: 'http://www.ruizhengyun.cn'
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 前端
-photos: /img/2018/wx-sp-1.jpg
+authorLink: 'http://www.ruizhengyun.cn/blog/about/'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
+photos: /img/2018/wx-sp.jpg
 abbrlink: b78d9fbb
-date: 2018-04-03 07:41:27
+date: 2018-05-03 07:41:27
 tags: 微信小程序
 keywords: 微信小程序
 description: 主要介绍小程序环境、WXSS、WXS、运行机制、生命周期、路由、事件

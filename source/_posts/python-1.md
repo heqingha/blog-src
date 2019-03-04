@@ -1,12 +1,12 @@
 ---
 title: python基础（一）
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: 'http://www.ruizhengyun.cn/about/'
-authorAbout: 'http://www.ruizhengyun.cn'
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
+authorLink: 'http://www.ruizhengyun.cn/blog/about'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
 categories: 学习
-photos: /img/2018/python.jpeg
+photos: /img/2018/python.jpg
 abbrlink: 20fd91a6
 date: 2017-01-05 07:50:00
 tags: python

@@ -1,12 +1,12 @@
 ---
 title: 顶层对象的属性
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: 'http://www.ruizhengyun.cn/about/'
-authorAbout: 'http://www.ruizhengyun.cn'
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 前端
-photos: /img/2015/es6.jpeg
+authorLink: 'http://www.ruizhengyun.cn/blog/about'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
+photos: /img/2015/es6.jpg
 tags: javascript
 abbrlink: 1b94c9c7
 date: 2018-04-17 11:03:44

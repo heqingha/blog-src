@@ -1,0 +1,23 @@
+<div class="page-title">
+    <ul>
+        <li><a href="/blog" data-name="<%= __('home') %>" title="Back Home"><%= __('home') %></a></li>
+        <li><a href="/blog/archives" data-name="<%= __('archives')  %>" title="<%= __('archives')  %>"><%= __('archives')  %></a></li>
+        <%- partial('_widget/search-bar') %>
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <h3 class="post-title"><%= __('tag_total_count', site.tags.length) %></h3>
+        </div>
+        <!-- <p><img src="/blog/images/tags-bg.png" alt="tags-bg"></p> -->
+        <div class="post-content markdown-body" itemprop="articleBody">
+            <ul class="tag-list">
+                <% site.tags.sort('name').map(function(tag){  %>
+                <li><a href="<%- url_for(tag.path) %>"><%= tag.name %>(<%= tag.length %>)</a></li>
+                <% }) %>
+            </ul>
+        </div>
+    </article>
+    <%- partial('_widget/ads/adSense') %>
+</div>

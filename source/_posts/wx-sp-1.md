@@ -1,12 +1,12 @@
 ---
 title: 微信小程序开发(一)
-author: 胖芮
+author: 江湖再见
 avatar: /images/pangrui.png
-authorLink: 'http://www.ruizhengyun.cn'
-authorAbout: 'http://www.ruizhengyun.cn'
-authorDesc: 不论我码不码代码，我都是一枚快乐的前端
-categories: 前端
-photos: /img/2018/wx-sp-1.jpg
+authorLink: 'http://www.ruizhengyun.cn/blog/about/'
+authorAbout: 'http://www.ruizhengyun.cn/blog/about'
+authorDesc: 不论码不码代码，都要做一枚快乐的前端
+categories: 编程
+photos: /img/2018/wx-sp.jpg
 tags: 微信小程序
 keywords: 微信小程序
 description: 微信小程序介绍与准备

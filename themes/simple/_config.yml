@@ -1,0 +1,106 @@
+# site name
+site_name: 江湖再见
+short_name: 见
+
+# CSP Model, true means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
+csp_enable: false
+
+# favicon
+favicon: /blog/images/favicon.png
+# unique avatar
+avatar_show: false
+avatar_image: /blog/images/favicon.png
+
+siteBuildingTime: 07/05/2011
+
+# Home page sort type: -1: newer first，1: older first.
+home_page_sort: -1
+# Home page article shown number
+home_article_shown: 10
+
+# Post sticky top support (you need to set top:number in post.md. )
+sticky_top:
+  enable: true
+
+# your site build time or domain buy time
+site_building_time: 07/05/2011
+
+# Top navigate menu name
+## Notice:
+## Name order decide show index.The name also called category alias,so you must set category alias before start server.
+## BTW,'category_map' and 'tag_map' field in site '_config.yml' file must one to one correspondence with menus below.
+menu:
+  编程: programming
+  人文技术: humanity-tech
+  日记: diary
+
+# Customize left navigation menus. faName is FontAwesome style name
+left_nav_menus:
+- uri: about
+  title: 作者
+  faName: fa-user-o 
+
+
+# cover info config
+cover_title: 越努力 越幸运
+cover_description: 致力于全栈，只为那颗最珍贵年轻的心
+
+# sns url
+sns:
+  github: https://github.com/ruizhengyun/
+  stack-overflow: https://stackoverflow.com/users/8601298
+  shield: https://www.zhihu.com/people/ruizhengyun
+  book: http://www.jianshu.com/u/d22e524e8ab5
+  asterisk: https://segmentfault.com/u/jianghuzaijian
+  envelope: mailto:840690384@qq.com
+
+# article declare. default content in languages
+post_declare: true
+
+# Local search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
+  # if auto, trigger search by changing input
+  # if manual, trigger search by pressing enter key or search button
+  trigger: auto
+  # show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+
+## Analytics setting. Google default
+analytics:
+  enable: false
+  google_analytics_id:
+
+## Google AdSense.
+adsense:
+  enable: false
+  auto: false
+  client_id:
+  archive_id:
+  tags_id:
+  post_left_id:
+  post_right_id:
+  post_bottom_id:
+
+
+## Comments settings. Disqus | Gitment（Introduction: https://imsun.net/posts/gitment-introduction/）
+comments:
+  enable: false
+  disqus_shortname:
+  gitment:
+    repo: http://ruizhengyun.cn/blog
+    githubID: 6204303  # https://api.github.com/users/名字
+    ClientID: ab625023048d89a04517
+    ClientSecret: 7c60cb2591df92a334ff3ae9498f69f3d825df29
+    lazy: true
+
+
+flowchart:
+  # raphael:   # optional, the source url of raphael.js
+  # flowchart: # optional, the source url of flowchart.js
+  options: # options used for `drawSVG`
+
+
+webmaster:
+  home: 'http://www.ruizhengyun.cn/blog/about'
